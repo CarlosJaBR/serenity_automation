@@ -154,7 +154,7 @@
             $("#requirements-tabs").tabs();
             $("#test-tabs").tabs();
 
-            var requirementsTree = [{"text":"Login","type":"feature","href":"0eb9f8602085fbfa5916a0c66b08ccf4d74939525b4e14c04ac100bf73eb3c12.html","nodes":[],"selectable":false,"tags":["\u003ca href\u003d\u0027##beforetable\u0027\u003e\u003ci class\u003d\u0027bi bi-hourglass-top pending-icon \u0027 title\u003d\u0027PENDING\u0027\u003e\u003c/i\u003e\u003c/a\u003e","\u003cspan class\u003d\u0027feature-count\u0027\u003e1 scenario\u003c/span\u003e, \u003cspan class\u003d\u0027feature-count\u0027\u003e3 test cases\u003c/span\u003e"]}];
+            var requirementsTree = [{"text":"Login","type":"feature","href":"0eb9f8602085fbfa5916a0c66b08ccf4d74939525b4e14c04ac100bf73eb3c12.html","nodes":[],"selectable":false,"tags":["\u003ca href\u003d\u0027##beforetable\u0027\u003e\u003ci class\u003d\u0027bi bi-hourglass-top pending-icon \u0027 title\u003d\u0027PENDING\u0027\u003e\u003c/i\u003e\u003c/a\u003e","\u003cspan class\u003d\u0027feature-count\u0027\u003e1 scenario\u003c/span\u003e, \u003cspan class\u003d\u0027feature-count\u0027\u003e6 test cases\u003c/span\u003e"]}];
 
             $('#tree').treeview({
                 data: requirementsTree,
@@ -325,6 +325,40 @@ In order to securely access their account
                                                                             </table>
                                                                         </td>
                                                                     </tr>
+                                                                    <tr>
+                                                                        <td style="width:95%;" class="toc-title">
+                                                                            <span class="orphan-scenario-toc-entry">
+                                                                                    <a href="#989ce722e32317087229e207de9ac7a9c8029bbd1a41893f97353555c1c8d114"
+                                                                                       title="View scenario details">
+                                                                                        <i class="bi bi-chat-dots"></i> Scenario Outline: login with case "&lt;case&gt;"
+                                                                                    </a>
+                                                                                        (3 examples)
+                                                                                </span>
+                                                                        </td>
+                                                                        <td>
+
+                                                                        </td>
+                                                                        <td style="width:5%;">
+                                                                            <table>
+                                                                                <tr>
+                                                                                    <td class="icons-bar">
+                                                                                        <a style="margin-left:0.5em;padding-right: 1.5em;"
+                                                                                           href="6ee66035bc42bdebb74756cb132f162307274aae552db555be89ea30579156b2.html"
+                                                                                           title="View test results">
+                                                                                            <a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
+                                                                                            </a>
+
+
+                                                                                            <a style="margin-left:0.5em;padding-right: 1.5em;"
+                                                                                               href="6ee66035bc42bdebb74756cb132f162307274aae552db555be89ea30579156b2.html"
+                                                                                               title="View test results">
+                                                                                                <i class="bi bi-eyeglasses"></i>
+                                                                                            </a>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </table>
+                                                                        </td>
+                                                                    </tr>
                                                     </table>
                                                 </div>
                                                 <!--- END OF TOC --->
@@ -334,7 +368,7 @@ In order to securely access their account
                                             <div class="col-sm-12">
                                                 <h3>Scenarios</h3>
 
-                                                    <a name="e77de773-6073-4821-af34-d521ba53ed4f"></a>
+                                                    <a name="faae8d80-bd72-46ae-9524-fbeac6eef697"></a>
                                                     <p class="rule-tags inline-tag">
                                                     </p>
 
@@ -362,6 +396,50 @@ In order to securely access their account
                                                                     
 
                                                                             <a href='##beforetable'><i class='bi bi-hourglass-top pending-icon ' title='PENDING'></i></a>
+                                                                        </span>
+                                                                </div>
+
+                                                            </div>
+                                                            <div class="scenario-docs card-body">
+                                                                    <p><p>When the user send the credentials</p>
+<table>
+<thead>
+<tr><th>{username}</th></tr>
+</thead>
+<tbody>
+<tr><td>{password}</td></tr>
+</tbody>
+</table>
+</p>
+                                                                    <p>Then the user can see the message &quot;{message}&quot;</p>
+                                                                <div class="examples">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="scenario-docs card" id="989ce722e32317087229e207de9ac7a9c8029bbd1a41893f97353555c1c8d114">
+                                                            <div class="scenario-docs card-header success"
+                                                                 style="min-height:1.5em;">
+                                                                <div>
+                                                                        <span class="scenario-heading">
+                                                                            <a href="6ee66035bc42bdebb74756cb132f162307274aae552db555be89ea30579156b2.html"
+                                                                               title="View test results">Scenario Outline: login with case "&lt;case&gt;"</a>
+                                                                        </span>
+
+                                                                        <span class="example-tags inline-tag">
+                                                                                <span class="badge tag-badge"
+                                                                                      style="background:default;">
+                                                                                    <i class="bi bi-tag-fill"></i>&nbsp;
+                                                                                    <a class="tagLink"
+                                                                                       style="background:default;"
+                                                                                       href="0a17ca2a0834567933779c98ff258e9031f0bda4ed71d320acc9238e06e1511e.html">enter (tag)</a>
+                                                                                </span>
+                                                                        </span>
+
+                                                                    <span class="scenario-result-icon">
+                                                                    
+
+                                                                            <a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
                                                                         </span>
                                                                 </div>
 
@@ -432,13 +510,13 @@ In order to securely access their account
                         <i class="bi bi-stopwatch"></i> Total
                         Duration
                     </td>
-                    <td>603ms</td>
+                    <td>2d  21h  50m 49s</td>
                 </tr>
                 <tr scope="row">
                     <td>
                         <i class="bi bi-caret-right"></i> Total Number of Test Cases
                     </td>
-                    <td>3</td>
+                    <td>6</td>
                     <td>
                         <i class="bi bi-trophy"></i> Fastest Test
                     </td>
@@ -453,7 +531,7 @@ In order to securely access their account
                         <i class="bi bi-skip-start"></i> Slowest
                         Test
                     </td>
-                    <td>596ms</td>
+                    <td>6s</td>
                 </tr>
                 <tr scope="row">
                     <td>
@@ -464,19 +542,19 @@ In order to securely access their account
                         <i class="bi bi-stopwatch"></i> Average
                         Execution Time
                     </td>
-                    <td>375ms</td>
+                    <td>2s</td>
                 </tr>
                 <tr scope="row">
                     <td>
                         <i class="bi bi-stop-circle"></i> Tests
                         Finished
                     </td>
-                    <td>abr 16, 2026 23:12:04</td>
+                    <td>abr 19, 2026 21:02:54</td>
                     <td>
                         <i class="bi bi-stopwatch-fill"></i> Total
                         Execution Time
                     </td>
-                    <td>603ms</td>
+                    <td>7s</td>
                 </tr>
                 </tbody>
             </table>
@@ -516,6 +594,24 @@ In order to securely access their account
                                                                     <td><a href='##beforetable'><i class='bi bi-exclamation-octagon-fill aborted-icon ' title='ABORTED'></i></a> <span style="display:none">PENDING</span>
                                                                     </td>
                                                                 </tr>
+                                                                <tr class="scenario-result SUCCESS">
+                                                                    <td>
+                                                                            <a href="0eb9f8602085fbfa5916a0c66b08ccf4d74939525b4e14c04ac100bf73eb3c12.html">Login</a>
+                                                                    </td>
+                                                                    <td>
+                                                                        <i class="bi bi-table" title="Data Driven Scenario"> <a href="6ee66035bc42bdebb74756cb132f162307274aae552db555be89ea30579156b2.html">login with case "<case>"</a>
+                                                                            <br/>
+                                                                                <a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> 3 passing test cases
+                                                                                <br/>
+                                                                    </td>
+                                                                    <td><span class='context-icon'><i class='bi bi-browser-chrome' title='Chrome'></i> <i class='bi bi-apple' title='Mac OS X'></i></span><span style="display:none">Chrome,Mac OS X</span>
+                                                                    </td>
+                                                                    <td>2</td>
+                                                                    <td>21:02:47</td>
+                                                                    <td>6s 493ms</td>
+                                                                    <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span style="display:none">SUCCESS</span>
+                                                                    </td>
+                                                                </tr>
                                                         </tbody>
                                                     </table>
 
@@ -539,7 +635,7 @@ In order to securely access their account
                             <div>
                                     <a href="0a17ca2a0834567933779c98ff258e9031f0bda4ed71d320acc9238e06e1511e.html">
                                     <span class="tag-badge badge" style="background-color:#a5c7ed; margin:1em;padding:4px;">
-                                        <i class="bi bi-tag-fill"></i> Enter&nbsp;&nbsp;&nbsp;3
+                                        <i class="bi bi-tag-fill"></i> Enter&nbsp;&nbsp;&nbsp;6
                                     </span>
                                     </a>
                             </div>
@@ -587,7 +683,7 @@ In order to securely access their account
             datasets: [{
                 label: 'Test Results',
                 fill: false,
-                data: [{meta: 'Passing tests', value: 0}, {meta: 'Pending tests', value: 3}, {meta: 'Ignored tests', value: 0}, {meta: 'Skipped tests', value: 0}, {meta: 'Aborted tests', value: 0}, {meta: 'Failing tests', value: 0}, {meta: 'Broken tests', value: 0}, {meta: 'Compromised tests', value: 0}],
+                data: [{meta: 'Passing tests', value: 3}, {meta: 'Pending tests', value: 3}, {meta: 'Ignored tests', value: 0}, {meta: 'Skipped tests', value: 0}, {meta: 'Aborted tests', value: 0}, {meta: 'Failing tests', value: 0}, {meta: 'Broken tests', value: 0}, {meta: 'Compromised tests', value: 0}],
                 backgroundColor: ['rgba(153,204,51,0.5)','rgba(165, 199, 238, 0.5)','rgba(168, 168, 168, 0.5)','rgba(238, 224, 152, 0.75)','rgba(255, 153, 102, 0.5)','rgba(255, 22, 49, 0.5)','rgba(255, 97, 8, 0.5)','rgba(255, 104, 255, 0.5)','rgba(83, 50, 168, 0.5)'],
                 borderColor: ['rgba(153,204,51,1)','rgba(165, 199, 238, 1)','rgba(168, 168, 168, 1)','rgba(238, 224, 152, 1)','rgba(255, 153, 102, 1)','rgba(255, 22, 49, 1)','rgba(255, 97, 8, 1)','rgba(255, 104, 255, 1)','rgba(83, 50, 168, 1)'],
                 borderWidth: 1,
@@ -638,7 +734,7 @@ In order to securely access their account
                         ctx.font = fontSize + "em sans-serif";
                         ctx.textBaseline = "middle";
 
-                        var text = " "
+                        var text = "50%"
                         textX = 10 + Math.round((width - ctx.measureText(text).width) / 2);
                         textY = (height / 2) - 40;
 
@@ -682,7 +778,7 @@ In order to securely access their account
             datasets: [{
                 label: 'Feature Coverage',
                 fill: false,
-                data: [{meta: 'Passing tests', value: 0}, {meta: 'Pending tests', value: 3}, {meta: 'Ignored tests', value: 0}, {meta: 'Skipped tests', value: 0}, {meta: 'Aborted tests', value: 0}, {meta: 'Failing tests', value: 0}, {meta: 'Broken tests', value: 0}, {meta: 'Compromised tests', value: 0}],
+                data: [{meta: 'Passing tests', value: 3}, {meta: 'Pending tests', value: 3}, {meta: 'Ignored tests', value: 0}, {meta: 'Skipped tests', value: 0}, {meta: 'Aborted tests', value: 0}, {meta: 'Failing tests', value: 0}, {meta: 'Broken tests', value: 0}, {meta: 'Compromised tests', value: 0}],
                 backgroundColor: ['rgba(153,204,51,0.5)','rgba(165, 199, 238, 0.5)','rgba(168, 168, 168, 0.5)','rgba(238, 224, 152, 0.75)','rgba(255, 153, 102, 0.5)','rgba(255, 22, 49, 0.5)','rgba(255, 97, 8, 0.5)','rgba(255, 104, 255, 0.5)','rgba(83, 50, 168, 0.5)'],
                 borderColor: ['rgba(153,204,51,1)','rgba(165, 199, 238, 1)','rgba(168, 168, 168, 1)','rgba(238, 224, 152, 1)','rgba(255, 153, 102, 1)','rgba(255, 22, 49, 1)','rgba(255, 97, 8, 1)','rgba(255, 104, 255, 1)','rgba(83, 50, 168, 1)'],
                 borderWidth: 1,
@@ -733,7 +829,7 @@ In order to securely access their account
                         ctx.font = fontSize + "em sans-serif";
                         ctx.textBaseline = "middle";
 
-                        var text = " "
+                        var text = "50%"
                         textX = 10 + Math.round((width - ctx.measureText(text).width) / 2);
                         textY = (height / 2) - 40;
 
@@ -778,7 +874,7 @@ In order to securely access their account
             datasets: [
                 {
                     label: 'Automated',
-                    data: [0,3,0,0,0,0,0,0],
+                    data: [3,3,0,0,0,0,0,0],
                     backgroundColor: ['rgba(153,204,51,0.5)','rgba(165, 199, 238, 0.5)','rgba(168, 168, 168, 0.5)','rgba(238, 224, 152, 0.75)','rgba(255, 153, 102, 0.5)','rgba(255, 22, 49, 0.5)','rgba(255, 97, 8, 0.5)','rgba(255, 104, 255, 0.5)','rgba(83, 50, 168, 0.5)'],
                     borderColor: ['rgba(153,204,51,1)','rgba(165, 199, 238, 1)','rgba(168, 168, 168, 1)','rgba(238, 224, 152, 1)','rgba(255, 153, 102, 1)','rgba(255, 22, 49, 1)','rgba(255, 97, 8, 1)','rgba(255, 104, 255, 1)','rgba(83, 50, 168, 1)'],
                     borderWidth: 1
@@ -861,7 +957,7 @@ In order to securely access their account
             datasets: [{
                 label: 'Number of tests per duration',
                 fill: false,
-                data: ['3','0','0','0','0','0','0','0'],
+                data: ['3','3','0','0','0','0','0','0'],
                 backgroundColor: 'rgba(83, 146, 255,0.5)',
                 borderColor: 'rgba(83, 146, 255, 1)',
             }]
