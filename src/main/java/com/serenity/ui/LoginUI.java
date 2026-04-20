@@ -10,4 +10,9 @@ public class LoginUI {
     public static final Target INPUT_PASSWORD =
             Target.the("input password")
                     .locatedBy("//input[@id='LoginPanel0_Password']");
+
+    public static final Target BTTN_LOGIN =
+            Target.the("button login")
+                    .locatedBy("//button[@id='LoginPanel0_LoginButton']");
 }
+
