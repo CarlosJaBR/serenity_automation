@@ -1,5 +1,6 @@
 package com.serenity.stepDefinitions;
 
+import com.serenity.tasks.LoginTask;
 import com.serenity.tasks.OpenBrowserTask;
 import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.Given;
@@ -17,7 +18,9 @@ public class LoginStepDefinition {
     }
     @When("the user send the credentials")
     public void theUserSendTheCredentials(DataTable dataTable) {
-
+        theActorInTheSpotlight().attemptsTo(
+                LoginTask.loginTask(dataTable)
+        );
     }
     @Then("the user can see the message {string}")
     public void theUserCanSeeTheMessage(String string) {
