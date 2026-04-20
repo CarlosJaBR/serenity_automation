@@ -3,7 +3,7 @@ package com.serenity.stepDefinitions;
 import com.serenity.questions.ValidateLogin;
 import com.serenity.tasks.LoginTask;
 import com.serenity.tasks.OpenBrowserTask;
-import com.serenity.ui.HomeUI;
+import com.serenity.ui.DashboardUI;
 import com.serenity.ui.LoginUI;
 import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.Given;
@@ -34,7 +34,7 @@ public class LoginStepDefinition {
     public void theUserCanSeeTheMessage(String expectedMessage) {
         if (isSuccessfulLogin(expectedMessage)) {
             theActorInTheSpotlight().attemptsTo(
-                    WaitUntil.the(HomeUI.LBL_DASHBOARD, WebElementStateMatchers.isVisible())
+                    WaitUntil.the(DashboardUI.LBL_DASHBOARD, WebElementStateMatchers.isVisible())
                             .forNoMoreThan(10).seconds()
             );
             theActorInTheSpotlight().should(
