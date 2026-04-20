@@ -19,7 +19,7 @@ public class LoginStepDefinition {
     @When("the user send the credentials")
     public void theUserSendTheCredentials(DataTable dataTable) {
         theActorInTheSpotlight().attemptsTo(
-                LoginTask.loginTask(dataTable)
+                LoginTask.login(dataTable)
         );
     }
     @Then("the user can see the message {string}")

@@ -29,7 +29,7 @@ public class LoginTask implements Task {
         );
     }
 
-    public static LoginTask loginTask(DataTable data){
+    public static LoginTask login(DataTable data){
         return instrumented(LoginTask.class,data);
     }
 }
