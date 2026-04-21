@@ -7,8 +7,9 @@ Feature: Sales order management in the Serenity Demo Platform
   Background:
     Given user open the browser
     When the user send the credentials
-      | username | admin    |
-      | password | serenity |
+      | admin    |
+      | serenity |
+
   @order
   Scenario: Successful creation of a basic order with one product
     When the user navigates to the "Orders" section in the "Northwind" module

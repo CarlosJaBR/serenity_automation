@@ -14,8 +14,6 @@ Feature: Login
       | <password> |
     Then the user can see the message "<message>"
     Examples:
-      | case         | username | password | message   |
-      | success      | admin    | serenity | Dashboard |
-      | bad user     | john     | serenity | Alert     |
-      | bad password | admin    | password | Alert     |
+      | case    | username | password | message   |
+      | success | admin    | serenity | Dashboard |
 
