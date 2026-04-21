@@ -32,6 +32,7 @@ public class CreateNewOrderTask implements Task {
         Map<String, String> formData = data.asMap(String.class, String.class);
         String customer = formData.getOrDefault("Customer", "").trim();
         String orderDate = resolveOrderDate(formData.getOrDefault("Order Date", ""));
+        String employee = formData.getOrDefault("Employee", "").trim();
 
         actor.attemptsTo(
                 Click.on(NewOrderUI.LIST_CUSTOMER),
@@ -39,8 +40,9 @@ public class CreateNewOrderTask implements Task {
                 Click.on(NewOrderUI.TXT_DATE),
                 Clear.field(NewOrderUI.TXT_DATE),
                 Enter.theValue(orderDate).into(NewOrderUI.TXT_DATE),
-                Hit.the(Keys.TAB).into(NewOrderUI.TXT_DATE)
-
+                Hit.the(Keys.TAB).into(NewOrderUI.TXT_DATE),
+                Click.on(NewOrderUI.LIST_EMPLOYEES),
+                Click.on(NewOrderUI.LBL_EMPLOYEE.of(employee))
         );
     }
 

@@ -16,8 +16,8 @@ Feature: Sales order management in the Serenity Demo Platform
     And clicks on the "New Order" button
     And fills out the form with the following information:
       | Customer   | Alfreds Futterkiste |
-      | Order Date | actual               |
-      | Employee   | Laura Callahan       |
+      | Order Date | actual              |
+      | Employee   | Laura Callahan      |
     And adds a product to the order detail:
       | Product  | Chai |
       | Quantity | 10   |

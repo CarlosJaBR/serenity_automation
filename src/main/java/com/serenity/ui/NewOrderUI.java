@@ -14,4 +14,10 @@ public class NewOrderUI {
             Target.the("Input date")
                     .locatedBy("//input[@name='RequiredDate']");
 
+    public static final Target LIST_EMPLOYEES=
+            Target.the("List employees")
+                    .locatedBy("//span[@id='select2-chosen-9']");
+    public static final Target LBL_EMPLOYEE=
+            Target.the("Label employee")
+                    .locatedBy("//div[contains(@class,'select2-result-label') and contains(normalize-space(.),'{0}')]");
 }
