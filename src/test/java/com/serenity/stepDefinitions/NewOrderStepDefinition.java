@@ -1,9 +1,6 @@
 package com.serenity.stepDefinitions;
 
-import com.serenity.tasks.CreateNewOrderTask;
-import com.serenity.tasks.OpenCreateOrder;
-import com.serenity.tasks.OpenModuleTask;
-import com.serenity.tasks.OpenNewOrderDetailTask;
+import com.serenity.tasks.*;
 import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -32,7 +29,9 @@ public class NewOrderStepDefinition {
     }
     @When("adds a product to the order detail:")
     public void addsAProductToTheOrderDetail(DataTable dataTable) {
-
+        theActorInTheSpotlight().attemptsTo(
+                CreateNewOrderDetailTask.createNewOrderDetail(dataTable)
+        );
     }
     @When("saves the record")
     public void savesTheRecord() {

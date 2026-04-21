@@ -23,7 +23,8 @@ public class CreateNewOrderDetailTask implements Task {
                 Click.on(NewOrderDetailUI.LIST_PRODUCTS),
                 Click.on(NewOrderDetailUI.LBL_PRODUCT.of(data.cell(0, 1).trim())),
                 Enter.theValue(data.cell(1, 1).trim()).into(NewOrderDetailUI.LBL_UNIT_PRICE),
-                Enter.theValue(data.cell(2, 1).trim()).into(NewOrderDetailUI.LBL_QUANTITY)
+                Enter.theValue(data.cell(2, 1).trim()).into(NewOrderDetailUI.LBL_QUANTITY),
+                Click.on(NewOrderDetailUI.BTTN_SAVE_ORDER_DETAIL)
         );
     }
     public static CreateNewOrderDetailTask createNewOrderDetail(DataTable data){

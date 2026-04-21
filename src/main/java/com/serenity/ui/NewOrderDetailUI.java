@@ -17,7 +17,7 @@ public class NewOrderDetailUI {
                         .locatedBy("//input[@name='Quantity']");
         public static final Target BTTN_SAVE_ORDER_DETAIL=
                 Target.the("button save order detail")
-                        .locatedBy("//span[@class='button-inner' and text()='Guardar']");
+                        .locatedBy("//div[@class='modal-content']//span[@class='button-inner' and text()='Guardar']");
 
 
 }
