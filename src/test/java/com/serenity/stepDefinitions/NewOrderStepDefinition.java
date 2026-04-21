@@ -8,6 +8,9 @@ import io.cucumber.java.en.When;
 import static net.serenitybdd.screenplay.actors.OnStage.theActorInTheSpotlight;
 
 public class NewOrderStepDefinition {
+
+    private String customerName;
+
     @When("the user navigates to the {string} section in the {string} module")
     public void theUserNavigatesToTheSectionInTheModule(String string, String string2) {
         theActorInTheSpotlight().attemptsTo(
@@ -22,6 +25,7 @@ public class NewOrderStepDefinition {
     }
     @When("fills out the form with the following information:")
     public void fillsOutTheFormWithTheFollowingInformation(DataTable dataTable) {
+        customerName = dataTable.asMap(String.class,String.class).get("Customer");
         theActorInTheSpotlight().attemptsTo(
                 CreateNewOrderTask.createNewOrder(dataTable),
                 OpenNewOrderDetailTask.openNewOrderDetail()
@@ -35,6 +39,9 @@ public class NewOrderStepDefinition {
     }
     @When("saves the record")
     public void savesTheRecord() {
+        theActorInTheSpotlight().attemptsTo(
+                SaveNewOrderTask.saveNewOrder()
+        );
     }
     @Then("the system should the order created successfully")
     public void theSystemShouldTheOrderCreatedSuccessfully() {

@@ -7,4 +7,9 @@ public class OrderUI {
             Target.the("Span new order")
                     .locatedBy("//span[@class='button-inner' and text()='Nuevo Pedido']");
 
+    public static final Target LBL_CUSTOMER =
+            Target.the("customer order link")
+                    .locatedBy("//a[contains(@class,'s-Demo-Northwind-OrderLink') and contains(normalize-space(),'{0}')]");
+
+
 }
