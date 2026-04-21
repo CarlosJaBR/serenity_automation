@@ -20,4 +20,8 @@ public class NewOrderUI {
     public static final Target LBL_EMPLOYEE=
             Target.the("Label employee")
                     .locatedBy("//div[contains(@class,'select2-result-label') and contains(normalize-space(.),'{0}')]");
+
+    public static final Target BTTN_SAVE_ORDER=
+        Target.the("Button save order")
+                .locatedBy("//span[@class='button-inner' and text()='Guardar']");
 }

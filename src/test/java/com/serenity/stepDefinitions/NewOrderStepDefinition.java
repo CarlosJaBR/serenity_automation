@@ -30,6 +30,7 @@ public class NewOrderStepDefinition {
     }
     @When("adds a product to the order detail:")
     public void addsAProductToTheOrderDetail(DataTable dataTable) {
+
     }
     @When("saves the record")
     public void savesTheRecord() {
