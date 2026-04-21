@@ -1,5 +1,6 @@
 package com.serenity.stepDefinitions;
 
+import com.serenity.tasks.CreateNewOrderTask;
 import com.serenity.tasks.OpenCreateOrder;
 import com.serenity.tasks.OpenModuleTask;
 import io.cucumber.datatable.DataTable;
@@ -23,6 +24,9 @@ public class NewOrderStepDefinition {
     }
     @When("fills out the form with the following information:")
     public void fillsOutTheFormWithTheFollowingInformation(DataTable dataTable) {
+        theActorInTheSpotlight().attemptsTo(
+                CreateNewOrderTask.createNewOrder(dataTable)
+        );
     }
     @When("adds a product to the order detail:")
     public void addsAProductToTheOrderDetail(DataTable dataTable) {

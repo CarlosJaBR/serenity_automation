@@ -17,5 +17,6 @@ public class LoginUI {
     public static final Target ALERT =
             Target.the("Alert login")
                     .locatedBy("//div[@id='toast-container']");
+
 }
 
