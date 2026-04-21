@@ -24,4 +24,8 @@ public class NewOrderUI {
     public static final Target BTTN_SAVE_ORDER=
         Target.the("Button save order")
                 .locatedBy("//span[@class='button-inner' and text()='Guardar']");
+
+    public static final Target BTTN_NEW_ORDER_DETAIL=
+            Target.the("Button new order detail")
+                    .locatedBy("//span[@class='button-inner' and text()='Nuevo Detalle de pedido']");
 }
