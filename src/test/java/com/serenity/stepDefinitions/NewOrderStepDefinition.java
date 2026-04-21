@@ -1,11 +1,17 @@
 package com.serenity.stepDefinitions;
 
+import com.serenity.questions.ValidateCreateOrder;
 import com.serenity.tasks.*;
+import com.serenity.ui.OrderUI;
 import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import net.serenitybdd.screenplay.waits.WaitUntil;
 
+import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
 import static net.serenitybdd.screenplay.actors.OnStage.theActorInTheSpotlight;
+import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isVisible;
+import static org.hamcrest.Matchers.is;
 
 public class NewOrderStepDefinition {
 
@@ -45,5 +51,17 @@ public class NewOrderStepDefinition {
     }
     @Then("the system should the order created successfully")
     public void theSystemShouldTheOrderCreatedSuccessfully() {
+        theActorInTheSpotlight().attemptsTo(
+                WaitUntil.the(OrderUI.FIRST_ROW_CUSTOMER, isVisible())
+                        .forNoMoreThan(10).seconds()
+        );
+
+        theActorInTheSpotlight().should(
+                seeThat(
+                        "El primer cliente de la tabla coincide con el cliente creado",
+                        ValidateCreateOrder.customerIsVisible(customerName),
+                        is(true)
+                )
+        );
     }
 }

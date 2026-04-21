@@ -4,7 +4,6 @@ import com.serenity.ui.NewOrderUI;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Click;
-
 import static net.serenitybdd.screenplay.Tasks.instrumented;
 
 public class SaveNewOrderTask implements Task {
