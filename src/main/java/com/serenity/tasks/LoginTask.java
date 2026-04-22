@@ -22,8 +22,8 @@ public class LoginTask implements Task {
     @Override
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(
-                Enter.theValue(String.valueOf(data.cell(0,0))).into(INPUT_USERNAME),
-                Enter.theValue(String.valueOf(data.cell(1,0))).into(INPUT_PASSWORD),
+                Enter.theValue(String.valueOf(data.cell(0,1))).into(INPUT_USERNAME),
+                Enter.theValue(String.valueOf(data.cell(1,1))).into(INPUT_PASSWORD),
                 Click.on(LoginUI.BTTN_LOGIN)
 
         );

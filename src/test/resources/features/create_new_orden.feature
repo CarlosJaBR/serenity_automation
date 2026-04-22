@@ -7,8 +7,8 @@ Feature: Sales order management in the Serenity Demo Platform
   Background:
     Given user open the browser
     When the user send the credentials
-      | admin    |
-      | serenity |
+      | user     | admin    |
+      | password | serenity |
 
   @order
   Scenario: Successful creation of a basic order with one product
